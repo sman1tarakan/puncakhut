@@ -1,0 +1,49 @@
+/* ===================== */
+/* ROOT VARIABLES        */
+/* ===================== */
+:root {
+  --primary: #6da5a6;
+  --white: #ffffff;
+  --light: #f2f2f2;
+  --accent: rgb(62, 147, 145);
+  --shadow: rgba(0, 0, 0, 0.3);
+  --pink: #ffb6c1;
+}
+
+/* ===================== */
+/* FONT FACE             */
+/* ===================== */
+@font-face {
+  font-family: efco;
+  src: url("../font/EFCO-Brookshire-Regular.eot");
+  src: url("../font/EFCO-Brookshire-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/EFCO-Brookshire-Regular.woff2") format("woff2"),
+    url("../font/EFCO-Brookshire-Regular.ttf") format("truetype"),
+    url("../font/EFCO-Brookshire-Regular.svg#league_spartanregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===================== */
+/* BASE STYLES           */
+/* ===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  background: var(--primary);
+  overflow-x: hidden;
+  overflow-y: auto;
+}

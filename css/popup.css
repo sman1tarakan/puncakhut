@@ -1,0 +1,62 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.8s ease forwards;
+  color: white;
+}
+
+.popup-content {
+  background: linear-gradient(135deg, #6fb6b5, #8dc0bc);
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(0.8);
+  animation: scaleUp 0.5s ease forwards;
+}
+
+.btn-lanjutkan {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #4c9d9b, #4c9d96);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #3f7e7d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-lanjutkan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #3f7e7d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

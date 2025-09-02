@@ -1,0 +1,176 @@
+/* ===================== */
+/* INFO SECTION          */
+/* ===================== */
+
+.info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: var(--white);
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.info h2 {
+  color: var(--white);
+  font-family: "efco", Georgia, serif;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info iframe {
+  width: 90%; /* atur lebar menjadi 90% dari kontainer */
+  max-width: 700px; /* batasi lebar maksimalnya */
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow);
+  padding-bottom: 30px;
+}
+
+.info a.btn {
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.info a.btn:hover {
+  background-color: #4c9d9b;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  max-width: 600px;
+}
+.info .parkiran {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.rundown-section {
+  background-color: rgba(0, 0, 0, 0.8); /* transparan gelap */
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  max-width: 600px;
+  margin: auto;
+}
+
+.rundown-section-acara {
+  background-color: rgb(42, 76, 75); /* transparan gelap */
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgb(42, 76, 75);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  max-width: 600px;
+  margin: auto;
+}
+
+.rundown-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.rundown-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #4c9d9b, #4c9d96);
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(32, 32, 32, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rundown-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(18, 18, 18, 0.6);
+}
+
+.dresscode {
+  max-width: 56.25rem;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  background-color: rgba(11, 22, 22, 0.6);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dresscode h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #81b9bc;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #f3f3f3;
+  font-family: "efco", Georgia, serif;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  color: #fafafa;
+}
+
+.card li {
+  font-family: "Work Sans", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .info .description {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .info .parkiran {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}

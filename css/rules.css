@@ -1,0 +1,28 @@
+/* ===================== */
+/* RULES SECTION         */
+/* ===================== */
+.rules {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  background-color: #458c8b;
+  background-size: cover;
+  min-height: 40vh;
+  padding-bottom: 5rem;
+}
+.rules h2 {
+  color: var(--white);
+  font-family: "efco", Georgia, serif;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.rules h3 {
+  font-size: 1.4rem;
+  margin: 0.8rem;
+}
+.rules p {
+  font-size: 1.18rem;
+}
