@@ -3,9 +3,9 @@
   backdrop-filter: blur(10px);
   color: #f0f0f0;
   text-align: center;
-  padding: 25px;
+  padding: 1.563rem;
   font-family: "Segoe UI", sans-serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -27,12 +27,14 @@
 .site-footer i {
   margin-right: 6px;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .designer {
-  background: white;
+  background: linear-gradient(to right, #f4f4f4, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  color: transparent;
+  background-clip: text;
 }
