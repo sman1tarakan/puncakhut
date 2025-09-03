@@ -117,21 +117,29 @@ document.addEventListener("click", () => {
 });
 
 // POPUP
-document.addEventListener("DOMContentLoaded", () => {
-  const popup = document.getElementById("popup");
-  const song = document.getElementById("song");
+if (countdownInterval > 0) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("popup");
+    const song = document.getElementById("song");
 
-  // Tampilkan popup
-  popup.style.display = "flex";
+    // Tampilkan popup
+    popup.style.display = "flex";
 
+    // Mulai audio
+    song.muted = false;
+    song.play().catch(() => {
+      console.log("Audio autoplay diblokir, tunggu interaksi.");
+    });
+
+    // Tutup popup saat klik "Lanjutkan"
+    document.getElementById("closePopup").addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  });
+} else {
   // Mulai audio
   song.muted = false;
   song.play().catch(() => {
     console.log("Audio autoplay diblokir, tunggu interaksi.");
   });
-
-  // Tutup popup saat klik "Lanjutkan"
-  document.getElementById("closePopup").addEventListener("click", () => {
-    popup.style.display = "none";
-  });
-});
+}
