@@ -143,3 +143,12 @@ if (countdownInterval > 0) {
     console.log("Audio autoplay diblokir, tunggu interaksi.");
   });
 }
+
+ScrollReveal().reveal("#footer", {
+  delay: 300,
+  duration: 1000,
+  origin: "bottom",
+  distance: "60px",
+  easing: "ease-in-out",
+  reset: false,
+});
