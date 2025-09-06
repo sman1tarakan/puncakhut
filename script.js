@@ -102,11 +102,11 @@ const countdownInterval = setInterval(() => {
     "0"
   );
 
-  // if (distance < 0) {
-  //   clearInterval(countdownInterval);
-  //   document.querySelector(".countdown").innerHTML =
-  //     "<h2>Acara telah dimulai!</h2>";
-  // }
+  if (distance < 0) {
+    clearInterval(countdownInterval);
+    document.querySelector(".countdown").innerHTML =
+      "<h2>Acara telah dimulai!</h2>";
+  }
 }, 1000);
 
 // AUDIO
