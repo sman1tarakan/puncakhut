@@ -134,6 +134,7 @@ if (countdownInterval > 0) {
     // Tutup popup saat klik "Lanjutkan"
     document.getElementById("closePopup").addEventListener("click", () => {
       popup.style.display = "none";
+      launchConfetti();
     });
   });
 } else {
@@ -152,3 +153,31 @@ ScrollReveal().reveal("#footer", {
   easing: "ease-in-out",
   reset: false,
 });
+
+function launchConfetti() {
+  const duration = 3000;
+  const end = Date.now() + duration;
+
+  const frame = () => {
+    confetti({
+      particleCount: 7,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 },
+      colors: ["#00ffe1ff", "#4d8bffff", "#00ccff", "#ffffff"],
+    });
+    confetti({
+      particleCount: 7,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 },
+      colors: ["#00ffe1ff", "#4d8bffff", "#00ccff", "#ffffff"],
+    });
+
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  };
+
+  frame();
+}
