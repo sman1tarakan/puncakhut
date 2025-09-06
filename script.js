@@ -105,7 +105,7 @@ const countdownInterval = setInterval(() => {
   if (distance < 0) {
     clearInterval(countdownInterval);
     document.querySelector(".countdown").innerHTML =
-      "<h2>Acara telah dimulai!</h2>";
+      "<h2 class='highlighted-text'>Puncak HUT-60 Telah Dimulai</h2>";
   }
 }, 1000);
 
